@@ -6,28 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="93dp"
-        android:layout_height="106dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chk1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="CheckBox"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/chk2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -36,7 +25,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/chk3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -45,10 +34,10 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/chk4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="CheckBox"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -88,10 +77,11 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:onClick="BtnOK"
         android:text="確認"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        app:layout_constraintTop_toBottomOf="@+id/chk3" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -103,6 +93,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="93dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/chk1"
+        app:layout_constraintTop_toBottomOf="@+id/chk1"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="99dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/chk2"
+        app:layout_constraintTop_toBottomOf="@+id/chk2"
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <ImageView
         android:id="@+id/img5"
@@ -119,27 +138,7 @@
         app:srcCompat="@mipmap/ic_launcher" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="99dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/checkBox2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
-        app:srcCompat="@mipmap/ic_launcher_round" />
-
-    <ImageView
-        android:id="@+id/img8"
-        android:layout_width="76dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:visibility="gone"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
-        app:layout_constraintTop_toTopOf="@+id/imageView10"
-        app:srcCompat="@mipmap/ic_launcher_round" />
-
-    <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/img6"
         android:layout_width="77dp"
         android:layout_height="82dp"
         android:layout_marginStart="8dp"
@@ -150,23 +149,25 @@
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="104dp"
-        android:layout_height="106dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
-        app:srcCompat="@android:drawable/btn_dialog" />
-
-    <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/img7"
         android:layout_width="89dp"
         android:layout_height="84dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:visibility="gone"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/img6"
+        app:layout_constraintTop_toTopOf="@+id/img6"
         app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/img8"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/img7"
+        app:layout_constraintTop_toTopOf="@+id/img7"
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
 </android.support.constraint.ConstraintLayout>
